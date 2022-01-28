@@ -1,7 +1,10 @@
 def run():
     numero=int(input("Escribe un numero: "))
     par_o_impar=numero%2
-    if par_o_impar==0:
+    divisible_cuatro=numero%4
+    if divisible_cuatro==0:
+        print("Tu numero es divisible 4")
+    elif par_o_impar==0:
         print("Tu numero es par")
     else:
         print("Tu numero es impar")
