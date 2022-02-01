@@ -3,7 +3,9 @@
 
 
 def run():
-    numero=int(input("Escribe un numero: "))
+    numero=int(input("""Este programa calcula los divisores de un numero.    
+    Escribe un numero:"""
+    ))
     contador=1
 
 
