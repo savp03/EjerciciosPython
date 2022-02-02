@@ -3,8 +3,7 @@
 import random
 
 def run():
-    # numero=random.randint(1, 9)
-    numero=3
+    numero=random.randint(1, 9)
     numero_usuario=0
 
     
@@ -13,10 +12,15 @@ def run():
        
         if numero<numero_usuario:
             print("Estas por encima del numero")
-            numero_usuario=int(input("Intenta de nuevo. Escribe tu numero: "))             
+            numero_usuario=int(input("Intenta de nuevo. Escribe tu numero: "))   
+            if numero==numero_usuario:
+                print("Ganaste")    
         elif numero>numero_usuario:
             print("Estas por debajo del numero")
             numero_usuario=int(input("Intenta de nuevo. Escribe tu numero: "))
+            continue
+            if numero==numero_usuario:
+                print("Ganaste")
         else:
             print("Ganaste. El numero es: "+str(numero))  
 
